@@ -138,8 +138,7 @@
 
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from "./components/Header";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Solutions } from "./components/Solutions";
 import { AGIVision } from "./components/AGIVision";
