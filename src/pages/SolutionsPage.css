@@ -1,0 +1,103 @@
+/* ========================================
+   SOLUTIONS PAGE - MINIMAL FIXES ONLY
+   Maintains your existing design system
+   ======================================== */
+
+/* Fix 1: Hero Section Visibility - Add spacing below header */
+.solutions-page-hero {
+  position: relative;
+  padding-top: 140px; /* Space below fixed header */
+  padding-bottom: 80px;
+}
+
+/* Ensure hero content is visible and centered */
+.solutions-page-header {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.solutions-page-label {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.solutions-page-title {
+  margin: 0 0 24px 0;
+}
+
+.solutions-page-subtitle {
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Fix 2: Consultation CTA Section */
+.consultation-cta-section {
+  position: relative;
+  padding: 60px 0 100px 0;
+}
+
+/* Center everything in the consultation card */
+.consultation-cta-card .solution-content {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make title BIGGER and centered */
+.consultation-cta-title {
+  margin: 0 0 32px 0;
+  font-size: 48px !important;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center !important;
+}
+
+.consultation-cta-text {
+  margin: 0 0 40px 0;
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center !important;
+}
+
+/* Make button proper width - not too long and centered */
+.consultation-cta-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 12px;
+  width: auto !important;
+  max-width: 280px;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .solutions-page-hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .consultation-cta-section {
+    padding: 40px 0 60px 0;
+  }
+
+  .consultation-cta-title {
+    font-size: 36px !important;
+  }
+
+  .consultation-cta-text {
+    font-size: 16px;
+  }
+}
+
+/* Ensure proper spacing for solutions grid */
+.solutions-page-content {
+  position: relative;
+  z-index: 1;
+}
