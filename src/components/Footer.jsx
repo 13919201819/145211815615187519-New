@@ -175,7 +175,7 @@
 import React from 'react';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import { companyInfo } from '../data/mock';
-
+import { Link } from 'react-router-dom';
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -216,23 +216,23 @@ export const Footer = () => {
 
             <div className="footer-column">
               <h4 className="footer-heading">Company</h4>
-              <a href="#agi-vision" className="footer-link">About Us</a>
+              <Link to="/about"     className="footer-link">About Us</Link>
               <a href="#use-cases" className="footer-link">Use Cases</a>
               <a href="#technology" className="footer-link">Technology</a>
             </div>
 
             <div className="footer-column">
               <h4 className="footer-heading">Resources</h4>
-              <a href="#" className="footer-link">Documentation</a>
+              <Link to="/investors" className="footer-link">Investors</Link>
               <a href="#" className="footer-link">Research Papers</a>
               <a href="#" className="footer-link">Blog</a>
             </div>
 
             <div className="footer-column">
               <h4 className="footer-heading">Legal</h4>
-              <a href="#" className="footer-link">Privacy Policy</a>
-              <a href="#" className="footer-link">Terms of Service</a>
-              <a href="#" className="footer-link">Cookie Policy</a>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/terms-and-conditions">Terms & Conditions</Link>
+              <Link to="/cookie-policy">Cookie Policy</Link>
             </div>
           </div>
         </div>

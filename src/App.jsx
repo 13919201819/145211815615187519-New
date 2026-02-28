@@ -151,6 +151,11 @@ import { Toaster } from "./components/ui/sonner";
 import LenisProvider from "./providers/LenisProvider";
 import { Products } from './pages/Products';
 import { BookDemo } from './pages/BookDemo';
+import { PrivacyPolicy }      from './pages/PrivacyPolicy';
+import { TermsAndConditions } from './pages/TermsAndConditions';
+import { CookiePolicy }       from './pages/CookiePolicy';
+import { AboutUs }   from './pages/AboutUs';
+import { Investors } from './pages/Investors';
 
 // Import Loader components
 import { LoaderProvider } from "./context/LoaderContext";
@@ -195,6 +200,11 @@ function App() {
             <Route path="/next-gen-physical-ai-agi-solutions" element={<SolutionsPage />} />
             <Route path="/products" element={<Products />} />
             <Route path="/book-demo" element={<BookDemo />} />
+            <Route path="/privacy-policy"      element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/cookie-policy"       element={<CookiePolicy />} />
+            <Route path="/about"     element={<AboutUs />} />
+            <Route path="/investors" element={<Investors />} />
           </Routes>
           
           <Toaster />
